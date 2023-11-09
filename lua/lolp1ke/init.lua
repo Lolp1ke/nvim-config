@@ -1,0 +1,5 @@
+require("lolp1ke.globals")
+require("lolp1ke.options")
+require("lolp1ke.keymaps")
+require("lolp1ke.autocmds")
+require("lolp1ke.bootstrap")
