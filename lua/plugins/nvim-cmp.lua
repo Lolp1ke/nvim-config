@@ -34,7 +34,7 @@ return {
 			-- configure lspkind for vs-code like icons
 			formatting = {
 				format = lspkind.cmp_format({
-					maxwidth = 50,
+					maxwidth = 100,
 					ellipsis_char = "...",
 				}),
 			},
@@ -46,7 +46,7 @@ return {
 
 			"L3MON4D3/LuaSnip",
 			-- follow latest release.
-			version = "2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+			version = "2.0", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 			-- install jsregexp (optional!).
 			build = "make install_jsregexp",
 		},

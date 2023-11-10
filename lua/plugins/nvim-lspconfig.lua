@@ -62,6 +62,7 @@ local config = function()
 		capabilities = capabilities,
 		filetypes = {
 			"typescript",
+			"javascript",
 		},
 		root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", ".git"),
 	})
@@ -101,7 +102,7 @@ local config = function()
 
 	-- docker
 	lspconfig.dockerls.setup({
-		capabilities = capabilities,
+		apabilities = capabilities,
 		on_attach = on_attach,
 	})
 
