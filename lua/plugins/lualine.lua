@@ -1,3 +1,18 @@
+local buffers = {
+	"buffers",
+	show_filename_only = true,
+	hide_filename_extension = false,
+	show_modified_status = true,
+
+	mode = 2,
+
+	symbols = {
+		modified = " ●",
+		alternate_file = "#",
+		directory = "",
+	},
+}
+
 return {
 	"nvim-lualine/lualine.nvim",
 	lazy = false,
@@ -23,7 +38,7 @@ return {
 				"mode",
 			},
 			lualine_c = {
-				"buffers",
+				buffers,
 			},
 			lualine_x = {},
 			lualine_y = {
@@ -33,6 +48,11 @@ return {
 			},
 			lualine_z = {
 				"location",
+			},
+		},
+		tabs = {
+			lualine_c = {
+				buffers,
 			},
 		},
 	},

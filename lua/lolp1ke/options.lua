@@ -1,13 +1,20 @@
 local opt = vim.opt
 
+-- General
+
 -- Indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.softtabstop = 2
 opt.expandtab = false
 opt.smartindent = true
-opt.wrap = true
 opt.list = true
+
+-- Wrapping
+opt.wrap = true
+opt.linebreak = false
+
+-- Text navigation
 
 -- Search
 opt.incsearch = true
